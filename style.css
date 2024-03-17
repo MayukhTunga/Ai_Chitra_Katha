@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(7px); 
+    z-index: -1;
+    opacity: 1;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading p {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+}
+.heading p{
+    font-size: 80px;
+    justify-content: center;
+}
+
+.comic-strip {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px; 
+}
+
+.comic-strip img {
+    max-width: 100%;
+
+    height: 300px;
+    width: 400px;
+    border: 3px solid black;
+     
+}
+.comic-strip img:nth-child(5) {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    max-width: 100%;
+    border: 3px solid black;
+    width: 100%;
+    height: 300px;
+}
+.comic-strip p{
+    font-size: 20px;
+    font-weight: bold;
+}
